@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Problem</router-link>
+      <router-link to="/slots">Slots</router-link>
+      <router-link to="/renderless-component">Renderless Component</router-link>
     </div>
     <router-view />
   </div>
@@ -20,7 +21,12 @@
   padding: 30px;
   a {
     font-weight: bold;
+    padding-left: 1rem;
     color: #2c3e50;
+    &:after {
+      content: "|";
+      padding-left: 1rem;
+    }
     &.router-link-exact-active {
       color: #42b983;
     }

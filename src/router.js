@@ -1,6 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import Problem from "./views/Problem";
+import Slots from "./views/Slots";
+import RenderlessComponent from "./views/RenderlessComponent";
 
 Vue.use(Router);
 
@@ -10,17 +12,18 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home
+      name: "problem",
+      component: Problem
     },
     {
-      path: "/about",
-      name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
+      path: "/slots",
+      name: "slots",
+      component: Slots
+    },
+    {
+      path: "/renderless-component",
+      name: "renderless component",
+      component: RenderlessComponent
     }
   ]
 });
