@@ -1,6 +1,6 @@
 # Bài tập dành cho ae
 
-Sử dụng renderless đẻ tạo ra một app todolist với các chức năng
+Sử dụng renderless để tạo ra một app todolist với hai giao diện khác nhau có các chức năng
 
 - Thêm task
 - Xoá task
