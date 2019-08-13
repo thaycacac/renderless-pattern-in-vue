@@ -1,17 +1,18 @@
 <template>
   <div>
     <slot
-      :inputAttrs="{ value: this.newTag }"
       :addTag="addTag"
       :removeTag="removeTag"
+      :inputAttrs="{ value: this.newTag }"
       :inputEvent="{
-        input:(e) => this.newTag = e.target.value,
-        keydown: (e)=> {
+        input: (e) => { this.newTag = e.target.value },
+        keydown: (e) => {
           if(e.keyCode === 13) {
             e.preventDefault()
             this.addTag()
           }
-        }}"
+        }
+        }"
     />
   </div>
 </template>

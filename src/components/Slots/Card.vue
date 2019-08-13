@@ -21,6 +21,7 @@
           </svg>
           Members only
         </p>
+        <slot />
         <slot name="title" />
         <slot name="content" />
       </div>
