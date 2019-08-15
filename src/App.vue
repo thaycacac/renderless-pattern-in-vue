@@ -4,6 +4,7 @@
       <router-link to="/">Problem</router-link>
       <router-link to="/slots">Slots</router-link>
       <router-link to="/renderless-component">Renderless Component</router-link>
+      <router-link to="/phongpv">Submission 1</router-link>
     </div>
     <router-view />
   </div>
