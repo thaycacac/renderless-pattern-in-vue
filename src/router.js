@@ -3,7 +3,7 @@ import Router from "vue-router";
 import Problem from "./views/Problem";
 import Slots from "./views/Slots";
 import RenderlessComponent from "./views/RenderlessComponent";
-import TodoComponent from "./views/TodoComponent";
+import PhongPV from "./views/Assignment/PhongPV";
 
 Vue.use(Router);
 
@@ -27,9 +27,9 @@ export default new Router({
       component: RenderlessComponent
     },
     {
-      path: "/renderless-todo-component",
-      name: "renderless todo component",
-      component: TodoComponent
+      path: "/phongpv",
+      name: "phongpv",
+      component: PhongPV
     }
   ]
 });
