@@ -4,6 +4,7 @@ import Problem from "./views/Problem";
 import Slots from "./views/Slots";
 import RenderlessComponent from "./views/RenderlessComponent";
 import PhongPV from "./views/Assignment/PhongPV";
+import EvanNguyen from "./views/Assignment/EvanNguyen";
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ export default new Router({
       path: "/phongpv",
       name: "phongpv",
       component: PhongPV
+    },
+    {
+      path: "/evannguyen",
+      name: "evannguyen",
+      component: EvanNguyen
     }
   ]
 });
