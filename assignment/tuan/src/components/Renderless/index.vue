@@ -2,6 +2,9 @@
   <div>
     <slot
       :addTodo="addTodo"
+      :all="all"
+      :done="done"
+      :doing="doing"
       :removeTodo="removeTodo"
       :completeTodo="completedTodo"
       :inputAttrs="{ value: this.newTodo }"
@@ -25,6 +28,17 @@ export default {
     return {
       newTodo: ""
     };
+  },
+  computed: {
+    all() {
+      return this.value.length
+    },
+    done() {
+      return this.value.filter(todo => todo.completed).length
+    },
+    doing() {
+      return this.value.filter(todo => !todo.completed).length
+    }
   },
   methods: {
     addTodo() {
