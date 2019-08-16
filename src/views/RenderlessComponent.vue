@@ -1,10 +1,6 @@
 <template>
-  <div class="container">
-    <renderless
-      v-model="tags1"
-      #default="{ addTag, removeTag, inputAttrs, inputEvent }"
-      class="mb-5"
-    >
+  <div>
+    <renderless v-model="tags1" #default="{ addTag, removeTag, inputAttrs, inputEvent }">
       <div class="tags-input">
         <span v-for="(tag, index) in tags1" class="tags-input-tag" :key="`tag-${index}`">
           <span>{{ tag }}</span>
