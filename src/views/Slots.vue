@@ -1,14 +1,14 @@
 <template>
   <div class="container mx-auto">
     <!-- Slot Content/ Compilation Scope/ Compilation Scope -->
-    <h1 class="text-teal-500 underline mt-5">Slot Content/ Compilation Scope/ Fallback Content</h1>
+    <h5 class="text-teal-500 underline mt-5">Slot Content/ Compilation Scope/ Fallback Content</h5>
     <box></box>
     <box>
       <h1 class="text-2xl">This is heading 1</h1>
       <p>This is paragraph</p>
     </box>
     <!-- Named Slots -->
-    <h1 class="text-teal-500 underline mt-5">Named Slots</h1>
+    <h5 class="text-teal-500 underline mt-5">Named Slots</h5>
     <card>
       <p
         slot="content"
@@ -20,7 +20,7 @@
       >Can coffee make you a better developer?</div>
     </card>
     <!-- Scoped Slots -->
-    <h1 class="text-teal-500 underline mt-5">Scoped Slots</h1>
+    <h5 class="text-teal-500 underline mt-5">Scoped Slots</h5>
     <counter v-slot="slotProps">
       <p>parent: {{ slotProps.count + 1 }}</p>
     </counter>

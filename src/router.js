@@ -3,6 +3,9 @@ import Router from "vue-router";
 import Problem from "./views/Problem";
 import Slots from "./views/Slots";
 import RenderlessComponent from "./views/RenderlessComponent";
+import PhongPV from "./views/Assignment/PhongPV";
+import EvanNguyen from "./views/Assignment/EvanNguyen";
+import ThongDo from "./views/Assignment/ThongDo";
 
 Vue.use(Router);
 
@@ -24,6 +27,21 @@ export default new Router({
       path: "/renderless-component",
       name: "renderless component",
       component: RenderlessComponent
+    },
+    {
+      path: "/phongpv",
+      name: "phongpv",
+      component: PhongPV
+    },
+    {
+      path: "/evannguyen",
+      name: "evannguyen",
+      component: EvanNguyen
+    },
+    {
+      path: "/thongdo",
+      name: "thongdo",
+      component: ThongDo
     }
   ]
 });
