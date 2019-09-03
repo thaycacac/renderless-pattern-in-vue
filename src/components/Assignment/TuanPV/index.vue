@@ -31,13 +31,13 @@ export default {
   },
   computed: {
     all() {
-      return this.value.length
+      return this.value.length;
     },
     done() {
-      return this.value.filter(todo => todo.completed).length
+      return this.value.filter(todo => todo.completed).length;
     },
     doing() {
-      return this.value.filter(todo => !todo.completed).length
+      return this.value.filter(todo => !todo.completed).length;
     }
   },
   methods: {
@@ -48,20 +48,30 @@ export default {
       ) {
         return;
       }
-      this.$emit("input", [...this.value, {
-        name: this.newTodo.trim(),
-        completed: false
-      }]);
+      this.$emit("input", [
+        ...this.value,
+        {
+          name: this.newTodo.trim(),
+          completed: false
+        }
+      ]);
       this.newTodo = "";
     },
     removeTodo(todo) {
       this.$emit("input", this.value.filter(t => t.name !== todo.name));
     },
     completedTodo(todo) {
-      this.$emit("input", this.value.map(t => t.name === todo.name ? {
-        name: t.name,
-        completed: !t.completed
-      } : t));
+      this.$emit(
+        "input",
+        this.value.map(t =>
+          t.name === todo.name
+            ? {
+                name: t.name,
+                completed: !t.completed
+              }
+            : t
+        )
+      );
     }
   }
 };

@@ -6,6 +6,7 @@ import RenderlessComponent from "./views/RenderlessComponent";
 import PhongPV from "./views/Assignment/PhongPV";
 import EvanNguyen from "./views/Assignment/EvanNguyen";
 import ThongDo from "./views/Assignment/ThongDo";
+import TuanPV from "./views/Assignment/TuanPV";
 
 Vue.use(Router);
 
@@ -42,6 +43,11 @@ export default new Router({
       path: "/thongdo",
       name: "thongdo",
       component: ThongDo
+    },
+    {
+      path: "/tuanpv",
+      name: "TuanPV",
+      component: TuanPV
     }
   ]
 });
