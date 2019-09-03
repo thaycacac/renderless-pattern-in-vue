@@ -7,6 +7,7 @@
       <router-link to="/phongpv">Submission 1</router-link>
       <router-link to="/evannguyen">Submission 2</router-link>
       <router-link to="/thongdo">Submission 3</router-link>
+      <router-link to="/tuanpv">Submission 4</router-link>
     </div>
     <router-view />
   </div>
